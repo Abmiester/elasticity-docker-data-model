@@ -1,0 +1,1 @@
+# elasticity-docker-data-model
