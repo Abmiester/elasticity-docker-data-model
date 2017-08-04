@@ -5,7 +5,7 @@ from pandas import DataFrame
 
 LB = environ['LOWER_PRICE_BOUND'] if 'LOWER_PRICE_BOUND' in environ else 40
 UB = environ['UPPER_PRICE_BOUND'] if 'UPPER_PRICE_BOUND' in environ else 60
-INC = environ['INCREMENTS'] if 'INCREMENTS' in environ else 62
+INC = environ['INCREMENTS'] if 'INCREMENTS' in environ else 2
 
 def daily_market_metrics(destination_engine):
     with destination_engine.connect() as connection:
